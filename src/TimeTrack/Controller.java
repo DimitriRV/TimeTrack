@@ -33,8 +33,8 @@ public class Controller extends AFrameController{
 	@Override
 	public void initComponents() {
 		// TODO Auto-generated method stub
-		CurrentSession.Controller c =new CurrentSession.Controller(); 
-		addPanelComponent(c, "panel");
+//		CurrentSession.Controller c =new CurrentSession.Controller(); 
+//		addPanelComponent(c, "panel");
 	}
 	
 	public View getView() {

@@ -88,15 +88,14 @@ public class View extends AFrameView {
 	@Override
 	public void initComponents() 
 	{
-		// TODO Auto-generated method stub
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setBounds(100, 100, 450, 300);
-		contentPane = panelViews.get("panel").getPanel();
+//		contentPane = panelViews.get("panel").getPanel();
 		
 		
 //		contentPane = new JPanel();
 //		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		frame.setContentPane(contentPane);
+//		frame.setContentPane(contentPane);
 //		contentPane.setLayout(null);
 //		
 ////		textPane = new JTextPane();
