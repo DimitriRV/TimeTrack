@@ -11,7 +11,6 @@ public abstract class AController implements IController
 	
 	public AController(AView view, AModel model) 
 	{
-		// TODO Auto-generated constructor stub
 		this.view = view;
 		this.model = model;
 		initialize();
