@@ -19,11 +19,8 @@ import java.awt.BorderLayout;
 
 public class View extends AFrameView {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;	
-	private JPanel contentPane;
+	private JPanel currentSessionPane;
 
 	/**
 	 * Create the frame.
@@ -90,28 +87,9 @@ public class View extends AFrameView {
 	{
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setBounds(100, 100, 450, 300);
-//		contentPane = panelViews.get("panel").getPanel();
-		
-		
-//		contentPane = new JPanel();
-//		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-//		frame.setContentPane(contentPane);
-//		contentPane.setLayout(null);
-//		
-////		textPane = new JTextPane();
-////		textPane.setBounds(74, 38, 285, 166);
-////		contentPane.add(textPane);
-//		String[][] rowData = {};
-//		
-//		String[] columnNames = {
-//				"ID", "name", "lastName"
-//		};
-//		
-//		table = new JTable(rowData, columnNames);
-//		JScrollPane x = new JScrollPane(table);
-//		x.setBounds(74, 38, 200, 200);
-//		contentPane.add(x);
-		
+		currentSessionPane = panelViews.get("currentSession").getPanel();
+		currentSessionPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		frame.setContentPane(currentSessionPane);
 	}
 
 	@Override

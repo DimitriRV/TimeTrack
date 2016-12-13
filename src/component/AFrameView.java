@@ -10,20 +10,14 @@ public abstract class AFrameView extends AView{
 
 	
 	protected JFrame frame;
-	protected Map<String,APanelView> panelViews;
 	
 	public AFrameView() {
 		super();
 		frame = new JFrame();
-		panelViews = new HashMap<String,APanelView>();
+		
 		// TODO Auto-generated constructor stub
 	}
 	
-	protected void addPanelComponent(APanelView panelView, String ID)
-	{
-		panelViews.put(ID, panelView);
-	}
-
 	/**
 	 * 
 	 */

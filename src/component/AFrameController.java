@@ -7,13 +7,8 @@ import java.util.HashMap;
 
 public abstract class AFrameController extends AController {
 	
-	private Map<String,APanelController> panelControllers;
-	
 	public AFrameController(AFrameView view, AModel model) {
 		super(view, model);
-		panelControllers = new HashMap<String,APanelController>();
-		
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -22,11 +17,7 @@ public abstract class AFrameController extends AController {
 
 	}
 	
-	protected void addPanelComponent(APanelController panelController, String ID)
-	{
-		panelControllers.put(ID, panelController);
-		getView().addPanelComponent(panelController.getView(), ID);
-	}
+	
 	
 	@Override
 	public AFrameView getView() {

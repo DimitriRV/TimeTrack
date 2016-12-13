@@ -1,12 +1,21 @@
 package component;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Observable;
 
 public abstract class AView implements IView {
-
+	
+	protected Map<String,APanelView> panelViews;
+	
 	public AView() {
-		// TODO Auto-generated constructor stub
+		panelViews = new HashMap<String,APanelView>();
+	}
+	
+	protected void addPanelComponent(APanelView panelView, String ID)
+	{
+		panelViews.put(ID, panelView);
 	}
 	
 	public abstract void initComponents();
